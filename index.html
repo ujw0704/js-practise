@@ -10,42 +10,182 @@
     <script>
         // removing specific element from array
 
-        let array=["splice" ,"slice", "object", "array"];
+        // let array=["splice" ,"slice", "object", "array"];
 
 
-        for(let i =0;i<array.length; i++){
-            console.log("element is "+array[i]);
-            if(array[i]==="slice"){
-               let a =  array.splice(i,1)
-               console.log(a)
-            }
-        }
+        // for(let i =0;i<array.length; i++){
+        //     console.log("element is "+array[i]);
+        //     if(array[i]==="slice"){
+        //        let a =  array.splice(i,1)
+        //        console.log(a)
+        //     }
+        // }
 
 
-        // using delete
+        // // using delete
 
-        let arr =["splice", "slice", "object","array"]
-           for(let i =0;i<arr.length;i++){
-               if (arr[i] ==='slice'){
-                   delete arr[i];
-            }
-                console.log(arr[i])
-        }
-    //    pushing new array
-        function ad(arr,n){
-           for (let i =0;i<arr.length;i++){
-            n.push(arr[i])
-        }
+        // let arr =["splice", "slice", "object","array"]
+        //    for(let i =0;i<arr.length;i++){
+        //        if (arr[i] ==='slice'){
+        //            delete arr[i];
+        //     }
+        //         console.log(arr[i])
+//         }
+//     //    pushing new array
+//         function ad(arr,n){
+//            for (let i =0;i<arr.length;i++){
+//             n.push(arr[i])
+//         }
        
-    }
-        let ade =[];
-        ad('ujwal',ade)
-        console.log(ade);
+//     }
+//         let ade =[];
+//         ad('ujwal',ade)
+//         console.log(ade);
+
+// //  array reverse
+
+// // let  name ="ujwal sharma"
+// let output =" "
+// for(let i=name.length-1;i>=0;i--){
+//     output += name[i]
+//     console.log(name[i])
+// }
 
 
 
 
-        
+// let nam = ["ujwal", "kushal", "rama", "ritu"];
+// let words = [];
+
+// for (let i = 0; i < nam.length; i++) {
+//   let nameWords = nam[i].split(" ").slice(1);
+//   let filteredWords = nameWords.filter(word => word !== "ram");
+//   words = words.concat(filteredWords);
+// }
+
+// console.log(words);
+//     let name ="ujwal"
+//   (name)? "ujwal": ""
+//   console.log(name)
+
+
+
+//   let name = "ujwal";
+// name = (name) ? "ujwal" : "";
+// console.log(name);
+
+
+
+// let word ="kushal";
+// word =(word)? "kushal" : "";
+// console.log(word)
+
+
+
+
+// let word =["ujwal", "kushal","rama"]
+
+// word = (word.includes("ujwal")?["vikas"]:[])
+// console.log(word)
+
+// 
+
+//        let words = {
+//   name: "ujwal",
+//   title: "sharma",
+//   age: "age"
+// };
+
+// let newarray = words.name.split("");
+// console.log(newarray);
+
+// let newarray1 = newarray.join("").trim();
+// newarray1 = newarray.includes("ujwal") ? ["ujwal"] : [];
+
+// console.log(newarray1);
+
+
+
+
+//  how to ittrate in for each   
+let name ={
+    name: "ujwal",
+    title:"sharma",
+    age :"20"
+}
+  
+Object.keys(name).forEach(key => {
+  console.log(key + ": " + name[key]);
+});
+
+
+    // what is value in js 
+
+
+//     let languages = ["JavaScript", "Java", "C++"];
+
+// // returns an Array Iterator object that contain values
+// let iteratorObject = languages.values();
+
+// // looping through iterator
+// for (let value of iteratorObject) {
+//   console.log(value);
+// }
+// 
+
+    function ad(arr, n) {
+   for (let i = 0; i < arr.length; i++) {
+      n.push(arr[i]);
+   }
+}
+
+setTimeout(() => {
+   let resultArray = [];
+   ad("ujwal", resultArray);
+   resultArray =[]
+   console.log(resultArray);
+}, 500);
+ 
+
+// array destructing
+  let na ="ujwal sharma"
+ let[firstName,lastName]= na.split(" ")
+console.log(firstName, lastName)
+
+
+
+// six things that will give falsely statement
+
+// undefined
+// null
+// NaN
+// 0
+// "" (empty string)
+// false (duh)
+
+// let nam = ["ujwal", "kushal", "rama", "ritu"];
+// let nam2 =[]
+// for(let i =0; i<nam.length;i++){
+//     let n = nam.split("").slice(2)
+//     let d =  n.filter((word=> word !=="ram")
+//     nam2 = nam2.concate(d)
+    
+//     )
+//     console.log(nam)
+// // }
+// let nam = ["ujwal", "kushal", "rama", "ritu"];
+// let nam2 = [];
+
+// for (let i = 0; i < nam.length; i++) {
+//     let n = nam[i].split("").slice(2);
+//     let d = n.filter(word => word !== "ram");
+//     nam2 = nam2.concat(d);
+//     console.log(d);
+// }
+
+// console.log(nam2);
+
+
     </script> 
 </body>
 </html>
