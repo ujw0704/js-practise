@@ -107,16 +107,16 @@
 
 
 
-//  how to ittrate in for each   
-let name ={
-    name: "ujwal",
-    title:"sharma",
-    age :"20"
-}
+// //  how to ittrate in for each   
+// let name ={
+//     name: "ujwal",
+//     title:"sharma",
+//     age :"20"
+// }
   
-Object.keys(name).forEach(key => {
-  console.log(key + ": " + name[key]);
-});
+// Object.keys(name).forEach(key => {
+//   console.log(key + ": " + name[key]);
+// });
 
 
     // what is value in js 
@@ -133,24 +133,24 @@ Object.keys(name).forEach(key => {
 // }
 // 
 
-    function ad(arr, n) {
-   for (let i = 0; i < arr.length; i++) {
-      n.push(arr[i]);
-   }
-}
+//     function ad(arr, n) {
+//    for (let i = 0; i < arr.length; i++) {
+//       n.push(arr[i]);
+//    }
+// }
 
-setTimeout(() => {
-   let resultArray = [];
-   ad("ujwal", resultArray);
-   resultArray =[]
-   console.log(resultArray);
-}, 500);
+// setTimeout(() => {
+//    let resultArray = [];
+//    ad("ujwal", resultArray);
+//    resultArray =[]
+//    console.log(resultArray);
+// }, 500);
  
 
 // array destructing
-  let na ="ujwal sharma"
- let[firstName,lastName]= na.split(" ")
-console.log(firstName, lastName)
+//   let na ="ujwal sharma"
+//  let[firstName,lastName]= na.split(" ")
+// console.log(firstName, lastName)
 
 
 
@@ -166,13 +166,26 @@ console.log(firstName, lastName)
 // let nam = ["ujwal", "kushal", "rama", "ritu"];
 // let nam2 =[]
 // for(let i =0; i<nam.length;i++){
-//     let n = nam.split("").slice(2)
-//     let d =  n.filter((word=> word !=="ram")
+//     let n = nam[i].split("").slice(2)
+//     let d =  n.filter((word=> word !=="ram")).length
 //     nam2 = nam2.concate(d)
+
     
-//     )
-//     console.log(nam)
-// // }
+    // console.log(nam)
+let nam = ["ujwal", "kushal", "rama", "ritu"];
+let nam2 = [];
+
+for (let i = 0; i < nam.length; i++) {
+    let n = nam[i].split("").slice(2);
+    let d = n.filter(word => word !== "r" && word !== "a" && word !== "m").join("");
+    nam2.push(d);
+
+    console.log(nam2);
+}
+
+
+
+    
 // let nam = ["ujwal", "kushal", "rama", "ritu"];
 // let nam2 = [];
 

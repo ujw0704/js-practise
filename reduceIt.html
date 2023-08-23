@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reduce It</title>
+    <style>
+      body {
+        text-align: center;
+        font-family: Arial, sans-serif;
+      }
+
+      form {
+        margin-top: 20px;
+      }
+
+      #strings {
+        width: 250px;
+        height: 30px;
+        margin-right: 10px;
+        padding: 5px;
+      }
+
+      #analyzeBtn {
+        padding: 5px 10px;
+      }
+
+      #result {
+        margin-top: 20px;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form id="stringForm">
+      <input
+        type="text"
+        id="strings"
+        placeholder="Enter comma-separated strings..."
+      />
+      <button type="submit" id="analyzeBtn">Analyze</button>
+    </form>
+    <p id="result"></p>
+    <script>
+        // javascript code goes here
+        let input = document.querySelector("input")
+      // let para = document.querySelector("p")
+       let result = document.querySelector("#result")
+     let button = document.querySelector("button")
+       button.addEventListener("click",function(e){
+        e.preventDefault()
+      result .innerHTML += input.value
+      let wordcount =  result. innerHTML.split(" ,")
+      let wordarray = wordcount.filter((word=> word.trim()!== " ")).length
+     
+      console.log(wordarray)
+
+     
+    })
+      
+    </script>
+  </body>
+</html>
