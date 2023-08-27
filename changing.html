@@ -73,9 +73,7 @@ const fruitType = document.querySelector("#fruitType");
 
 btn.addEventListener("click", () => {
   fruitList.innerHTML = fruits
-    .filter(fruit => fruitType.value === "all" || fruit.type === fruitType.value)
-    .map(fruit => `<li>${fruit.name}</li>`)
-    .join("");
+    .filter(fruit => fruitType.value === "all" || fruit.type === fruitType.value) .map(fruit => `<li>${fruit.name}</li>`).join("");
 });
 
 

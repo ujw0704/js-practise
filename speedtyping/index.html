@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Typing Test</title>
+</head>
+<body>
+    <div>
+        <h1>Speed Typing Test</h1>
+        <div>
+            <input class="inputfield" type="text" name="uname" placeholder="Type as fast as you can" autofocus />
+            <p id="time">Time 0</p>
+            <p class="scores">Score 0</p>
+            <h2 class="currentwords">waddadad</h2>
+        </div>
+    </div>
+    <script>
+        let score = 0;
+        let times = 0;
+
+        let inputfield = document.querySelector(".inputfield");
+        let scores = document.querySelector(".scores");
+        let time = document.querySelector("#time");
+        let currentwords = document.querySelector(".currentwords");
+
+        let words = [
+            'hello',
+            'how are you',
+            'table',
+            'cable',
+            'I am done',
+            'bottle',
+            'cable',
+            'math',
+            'phone'
+        ];
+
+        function displayRandomWords() {
+            let randomIndex = Math.floor(Math.random() * words.length);
+            console.log(words[randomIndex]);
+            currentwords.innerHTML = words[randomIndex];
+
+            if (currentwords.innerHTML.split(' ').length < words.length) {
+            }
+        }
+        
+        displayRandomWords(); 
+         setTimeout(displayRandomWords  ,7000); 
+    </script>
+</body>
+</html>
