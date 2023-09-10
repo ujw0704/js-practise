@@ -1,0 +1,16 @@
+*{
+    padding:0px;
+     margin:0px;
+     box-sizing: border-box;
+}
+div{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    position: fixed;
+    right:0px
+    
+}
+
+/* flex is one dimenionls layout methods for arragin items in row or cloum */
+/* flexiable */

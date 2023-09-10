@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+   
+  
+//     let url = "https://abs.com";
+// let loading = false;
+
+// if (!loading) {
+//     return true;
+// }
+
+
+// let lower = "PHP";
+// lower.indexOf(3)
+// console.log(lower)
+
+
+function disvisabale(n) {
+    let result = 0; 
+    for (let i = 0; i < n.length; i++) {
+        console.log(n[i]);
+        for (let j = i + 1; j < n.length; j++) {
+            console.log(n[j]);
+            if (n[i] % n[j] === 0 || n[j] % n[i] === 0) {
+                result++;
+            }
+        }
+    }
+    return result;
+}
+
+console.log(disvisabale([1, 2, 3]));  // Output: 1
+console.log(disvisabale([2, 4, 6]));  // Output: 3
+console.log(disvisabale([2, 4, 16])); // Output: 6
+
+
+   </script> 
+</body>
+</html>
