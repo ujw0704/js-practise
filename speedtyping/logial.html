@@ -7,45 +7,57 @@
 </head>
 <body>
     <script>
-    // missing now //search //find
+//     missing now //search //find
 
-//     function missing(value, key){
-//         for(let i =0; i<value.length;i++){
-//             if(value[i]!==key){
-//               console.log(value[i])
+    // function missing(value, key){
+    //     for(let i =0; i<value.length;i++){
+    //         if(value[i]!==key){
+    //           console.log(value[i])
 
-//             }
-//         }
-//     }
+    //         }
+    //     }
+//     // }
 // const value =[1,2,3,4,5]
 // missing(value ,2)
 
+function missing(value, key){
+        for(let i =0; i<value.length;i++){
+            if(value[i]!==key){
+              console.log(value[i])
+
+            }
+        }
+    }
+const value =[1,2,3,4,5]
+missing(value ,2)
+
+
 
 // merging array finding dublicate
-let  array1 =[1,2,3, 3,4,5,5,7,8,9]
-let array2 =[2,5,5,6,7,9,8,9]
- let array3 =  []
- for(let i=0; i<array1.length;i++){
-    if(!array3.includes(array1[i])){
-        console.log('true')
-        }else {
-            console.log("false")
-            }
-            }
-            for (let j=0 ;j<array2.length;j++) {
-                if (!array3.includes(array2[j])) {
-                    console.log('true');
-                    } else {
-                        console.log("false");
-                        }
-                        }
-                        for(let k of [...new Set([...array1,...array2])] ){
-                            console.log(`${k}`) 
-                            }
-                            // assending order
-                            let as =[1,2,3,4,5,7,8,9,6]
-                            as.sort((a,b)=> a - b )
-                            console.table(as)
+// let  array1 =[1,2,3, 3,4,5,5,7,8,9]
+// let array2 =[2,5,5,6,7,9,8,9]
+//  let array3 =  []
+//  for(let i=0; i<array1.length;i++){
+//     if(!array3.includes(array1[i])){
+//         console.log('true')
+//         }else {
+//             console.log("false")
+//             }
+//             }
+//             for (let j=0 ;j<array2.length;j++) {
+//                 if (!array3.includes(array2[j])) {
+//                     console.log('true');
+//                     } else {
+//                         console.log("false");
+//                         }
+//                         }
+//                         for(let k of [...new Set([...array1,...array2])] ){
+//                             console.log(`${k}`) 
+//                             }
+//                             // assending order
+//                             let as =[1,2,3,4,5,7,8,9,6]
+//                             as.sort((a,b)=> a - b )
+//                             console.table(as)
 
 
                             
