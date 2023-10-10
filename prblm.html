@@ -23,6 +23,38 @@ let arry = [1, 3,6,8,9,10,12,]
 arry.push(2),arry.slice()
 
 console.log(arry)
+  //delete array
+
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let targetValue = 4; 
+let found = false; 
+for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] === targetValue) {
+        found = true; 
+        break; 
+    }
+}
+
+if (found) {
+    console.log("Value found in the array.");
+} else {
+    console.log("Value not found in the array.");
+}
+
+//   inserting array
+let number = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let position = 4; 
+let newValue = 10; 
+
+for (let i = number.length - 1; i >= 0; i--) {
+    if (i >= position) {
+        number[i + 1] = number[i];
+        if (i === position) {
+            number[i] = newValue;
+            console.log(number);
+        }
+    }
+}
 
 
     </script>
